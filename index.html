@@ -3,53 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BPH Presentation</title>
+    <title>BPH Presentation - Divya Gautam</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            background-color: #f7f7f7;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 80px;
+            max-width: 600px;
+            width: 100%;
             text-align: center;
         }
-
+        
         h1 {
-            margin-top: 50px;
-            color: #333;
+            font-size: 2em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: 600;
         }
-
-        p {
+        
+        .subtitle {
             font-size: 1.1em;
-            color: #555;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+            font-weight: 300;
         }
-
-        a.button {
-            display: inline-block;
+        
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            margin: 30px auto;
+            border-radius: 2px;
+        }
+        
+        .author-info {
+            margin-bottom: 40px;
+        }
+        
+        .author-name {
+            font-size: 1.4em;
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .author-affiliation {
+            font-size: 1em;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+        }
+        
+        .email-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             margin-top: 30px;
-            padding: 15px 25px;
-            font-size: 1.2em;
+            padding: 16px 40px;
+            font-size: 1.1em;
             color: white;
-            background-color: #007BFF;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             text-decoration: none;
-            border-radius: 8px;
-            transition: background-color 0.3s;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            font-weight: 500;
+            letter-spacing: 0.5px;
         }
-
-        a.button:hover {
-            background-color: #0056b3;
+        
+        .email-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        .email-link:active {
+            transform: translateY(0);
+        }
+        
+        .icon {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 30px;
+            }
+            
+            h1 {
+                font-size: 1.6em;
+            }
+            
+            .author-name {
+                font-size: 1.2em;
+            }
+            
+            .email-link {
+                padding: 14px 30px;
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
-
-    <h1>Benign Prostatic Hyperplasia (BPH) Presentation</h1>
-    <p>Click the button below to view the Canva presentation without logging in:</p>
-    <a href="https://www.canva.com/design/DAG3A-XIAGU/o4RY8AZjop0syDhuqYmeJw/view?utm_content=DAG3A-XIAGU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" class="button">View Presentation</a>
-
+    <div class="container">
+        <h1>Benign Prostatic Hyperplasia</h1>
+        <p class="subtitle">Medical Presentation</p>
+        
+        <div class="divider"></div>
+        
+        <div class="author-info">
+            <div class="author-name">Divya Gautam</div>
+            <div class="author-affiliation">The University of Texas at Arlington</div>
+            <div class="author-affiliation">Arlington, Texas</div>
+        </div>
+        
+        <a href="https://www.canva.com/design/DAG3A-XIAGU/o4RY8AZjop0syDhuqYmeJw/view?utm_content=DAG3A-XIAGU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" 
+           target="_blank" 
+           class="email-link">
+            <span class="icon">📧</span>
+            dgauram1300@gmail.com
+        </a>
+    </div>
 </body>
 </html>
